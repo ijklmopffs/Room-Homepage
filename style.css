@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+}
+.one {
+  display: flex;
+  align-items: center;
+}
+.first {
+  position: relative;
+  flex: 1;
+  height: 534px;
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 90%;
+  left: 10%;
+}
+.links {
+  margin-left: 70px;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.links a + a {
+  margin-left: 20px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.second {
+  width: 480px;
+  padding: 20px;
+  position: relative;
+}
+.title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  width: 350px;
+}
+.text {
+  color: gray;
+  width: 324px;
+}
+.shop {
+  display: flex;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 700;
+  align-items: center;
+  cursor: pointer;
+}
+.shop img {
+  margin-left: 10px;
+}
+.shop p {
+  letter-spacing: 10.2px;
+}
+.mobile {
+  display: none;
+}
+.angle {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  align-items: center;
+  position: absolute;
+  bottom: -75.5%;
+  left: -6%;
+  cursor: pointer;
+}
+.left,
+.right {
+  padding: 20px;
+}
+.left:hover,
+.right:hover {
+  background-color: lightgray;
+}
+.two {
+  display: flex;
+  align-items: center;
+}
+.two_text {
+  padding: 20px;
+}
+.two_text h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+}
+.two_text p {
+  margin-top: 10px;
+}
+.none {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.close {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .close {
+    display: block;
+  }
+  .one {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .links a {
+    margin-left: 30px;
+  }
+  .links.active {
+    display: flex;
+    top: 0;
+    align-items: center;
+  }
+  .links {
+    display: none;
+    position: fixed;
+    width: 150%;
+    right: -50%;
+    top: -100%;
+    background-color: white;
+    padding: 30px;
+    transition: top 0.3s ease-in-out;
+  }
+  .links a {
+    color: black;
+  }
+  .hamburger {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .second {
+    width: 93%;
+  }
+  .title {
+    font-size: 2em;
+    width: 245px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .shop {
+    margin: 0 auto;
+    width: 247px;
+    margin-top: 10px;
+  }
+  .text {
+    width: 245px;
+    margin: 0 auto;
+  }
+  .two {
+    flex-direction: column;
+  }
+  .two_text {
+    width: 80%;
+  }
+  .dark,
+  .light {
+    width: 100%;
+  }
+  .links {
+    display: none;
+  }
+  .angle {
+    bottom: 99.9%;
+    left: 71%;
+  }
+  .first {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .angle {
+    left: 57%;
+  }
+  .second {
+    width: 95%;
+  }
+}
