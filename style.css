@@ -1,6 +1,3 @@
-body {
-  max-width: 1350px;
-}
 * {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
@@ -12,7 +9,6 @@ body {
 }
 .first {
   position: relative;
-  flex: 1;
   height: 534px;
 }
 .navbar {
@@ -74,7 +70,7 @@ body {
   align-items: center;
   position: absolute;
   bottom: -75.5%;
-  left: -6%;
+  left: 0%;
   cursor: pointer;
 }
 .left,
