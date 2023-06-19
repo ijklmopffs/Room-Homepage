@@ -1,3 +1,6 @@
+body {
+  max-width: 1350px;
+}
 * {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
