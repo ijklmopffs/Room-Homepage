@@ -1,17 +1,25 @@
 const elements = document.querySelectorAll(".one");
 const prev = document.querySelectorAll(".left");
 const next = document.querySelectorAll(".right");
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".links");
-const close = document.querySelector(".close");
+const hamburger = document.querySelectorAll(".hamburger");
+const menu = document.querySelectorAll(".links");
+const close = document.querySelectorAll(".close");
 let currentIndex = 0;
 
-hamburger.addEventListener("click", function () {
-  menu.classList.add("active");
+hamburger.forEach((ham) => {
+  ham.addEventListener("click", function () {
+    menu.forEach((menu) => {
+      menu.classList.add("active");
+    });
+  });
 });
 
-close.addEventListener("click", () => {
-  menu.classList.remove("active");
+close.forEach((close) => {
+  close.addEventListener("click", () => {
+    menu.forEach((menu) => {
+      menu.classList.remove("active");
+    });
+  });
 });
 
 prev.forEach((button) => {
